@@ -4,6 +4,3 @@
 ✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°
 ✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°
    *ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚
-   
-## Project Menager
-[Jan Puzio](https://www.linkedin.com/in/jan-puzio/?originalSubdomain=pl) 
