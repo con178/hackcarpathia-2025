@@ -9,7 +9,7 @@ print(os.getcwd())
 def record_text():
     try:
         with sr.Microphone() as source2:
-            r.adjust_for_ambient_noise(source2, duration=3)
+            r.adjust_for_ambient_noise(source2, duration=5)
             audio2 = r.listen(source2)
             MyText = r.recognize_google(audio2, language = 'pl')
             return MyText 

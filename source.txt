@@ -1,0 +1,1 @@
+speach to text: Creating a Speech to Text Program with Python, CS Coach, https://www.youtube.com/watch?v=LEDpgye3bf4
