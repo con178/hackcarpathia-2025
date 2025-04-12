@@ -6,7 +6,9 @@ import logs
 
 # Configuration
 LOG_INTERVAL = 5  # Log people count every 5 seconds
-CAMERA_NAME = 'przychodnia_1'
+CAMERA_NAME = 'Przychodnia kwiatuszek'
+camera_latitude = 50.031200
+camera_longitude = 22.018000
 
 # Load MobileNet SSD model
 net = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'mobilenet_iter_73000.caffemodel')
@@ -67,7 +69,7 @@ def main():
         # Log the number of people every minute
         if current_time - last_log_time >= LOG_INTERVAL:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            logs.log_message(f"[{timestamp}] Number of people detected on {CAMERA_NAME}: {people_count}")
+            logs.log_message(f"{camera_latitude},{camera_longitude},{CAMERA_NAME}, {people_count}, {timestamp}")
             last_log_time = current_time
 
         # Display video with labeled people

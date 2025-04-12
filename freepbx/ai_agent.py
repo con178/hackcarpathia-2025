@@ -23,11 +23,6 @@ def main():
     # można pominąć odczytywanie pliku.
     input_audio_file = "/tmp/caller_input.wav"
     user_text = record_text(input_audio_file)
-    #os.remove("/var/lib/asterisk/sounds/ai_response.ulaw")
-    # Gotowy, ustalony tekst odpowiedzi
-    #response_text = ('Witaj, jeśli potrzebujesz wizyty u lekarza pierwszego kontaktu '
-    #                 'polecam przychodnię "Kwiatuszek". Znajduje się 1km od twojej lokalizacji. '
-    #                 'Aktualnie w kolejce jest tylko 5 osób a w przychodni jest dwóch lekarzy pierwszego kontaktu.')
 
     # Nazwy plików wynikowych (bez timestampów)
     mp3_file = "/tmp/ai_response.mp3"

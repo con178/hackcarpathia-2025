@@ -2,10 +2,8 @@ from datetime import datetime
 
 
 def log_message(message):
-    # Create a timestamp for the log
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     # Combine the timestamp with the message
-    log_entry = f"{timestamp} - {message}"
+    log_entry = f"{message}"
 
     # Print the message to the console
     print(log_entry)

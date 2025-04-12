@@ -22,9 +22,11 @@ def return_specialists_times(doctor, city):
 
     all_facilities = pd.DataFrame(all_facilities)
     all_facilities.columns = ['facility_name', 'street', 'city', 'phone', 'waiting_time_in_days', 'benefit_name']
-    all_facilities_text = all_facilities.to_string()
+    all_facilities = all_facilities.sort_values('waiting_time_in_days', ascending=True).head(1)
 
-    return all_facilities_text
+    chosen_facility = all_facilities.to_string()
+
+    return chosen_facility
 
 
 
